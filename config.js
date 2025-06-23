@@ -10,7 +10,7 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "IK~ZftGCITT#jK4hDMGfT8wGQp4UFvXPUTn94wcj5GzUWqSpespxS4Q",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "IK~EeN1yQRB#ET_PHt0M8JfKwPJjri449e9UBohRccbJu-gd62gOK7M",  // Your bot's session ID (keep it secure)
     PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
     CHATBOT: getConfig("CHATBOT") || "on", // on/off chat bot 
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "KHAN-MD",  // Bot's display name
@@ -27,7 +27,7 @@ module.exports = {
     // ===== AUTO-RESPONSE SETTINGS =====
     AUTO_REPLY: process.env.AUTO_REPLY || "false",              // Enable/disable auto-reply
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",// Reply to status updates?
-    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*KHAN MD VIEWED YOUR STATUS 🤖*",  // Status reply message
+    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "",  // Status reply message
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
     ANTI_CALL_MSG: process.env.ANTI_CALL_MSG || "*Call Rejected Automatically 🤖*",  // Status reply message
     // ===== REACTION & STICKER SETTINGS =====
@@ -48,11 +48,11 @@ module.exports = {
     ANTI_CALL: process.env.ANTI_CALL || "true", // enble to reject calls automatically 
     ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false",    // Block bad words?
     ANTI_LINK: process.env.ANTI_LINK || "true",    // Block links in groups?
-    ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "false",                 // Block links in groups?
+    ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "true",                 // Block links in groups?
     ANTI_VV: process.env.ANTI_VV || "true",   // Block view-once messages?
-    DELETE_LINKS: process.env.DELETE_LINKS || "false",          // Auto-delete links?
+    DELETE_LINKS: process.env.DELETE_LINKS || "true",          // Auto-delete links?
     ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same", // inbox deleted messages (or 'same' to resend)
-    ANTI_BOT: process.env.ANTI_BOT || "true",
+    ANTI_BOT: process.env.ANTI_BOT || "false",
     PM_BLOCKER: process.env.PM_BLOCKER || "true",
 
     // ===== BOT BEHAVIOR & APPEARANCE =====
@@ -64,5 +64,5 @@ module.exports = {
     AUTO_BIO: process.env.AUTO_BIO || "false", // ture to get auto bio 
     WELCOME: process.env.WELCOME || "false", // true to get welcome in groups 
     GOODBYE: process.env.GOODBYE || "false", // true to get goodbye in groups 
-    ADMIN_ACTION: process.env.ADMIN_ACTION || "false", // true if want see admin activity 
+    ADMIN_ACTION: process.env.ADMIN_ACTION || "true", // true if want see admin activity 
 };
