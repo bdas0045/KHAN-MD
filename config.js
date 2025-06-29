@@ -10,7 +10,7 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "IK~cL0gHShR#nAlcuJSEwxadP20cXEm1N5cHEI-rAEe3lhfcYSrRzvI",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "IK~4OtykQSY#RJP4qWqse7e5vfOtq9j-qzxKX6BMBURMtbZ4_S5FqW4",  // Your bot's session ID (keep it secure)
     PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
     CHATBOT: getConfig("CHATBOT") || "on", // on/off chat bot 
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "KHAN-MD",  // Bot's display name
@@ -29,7 +29,7 @@ module.exports = {
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",// Reply to status updates?
     AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "",  // Status reply message
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
-    ANTI_CALL_MSG: process.env.ANTI_CALL_MSG || "*Call Rejected Automatically 🤖*",  // Status reply message
+    ANTI_CALL_MSG: process.env.ANTI_CALL_MSG || "**",  // Status reply message
     // ===== REACTION & STICKER SETTINGS =====
     AUTO_REACT: process.env.AUTO_REACT || "false",              // Auto-react to messages?
     CUSTOM_REACT: process.env.CUSTOM_REACT || "false",          // Use custom emoji reactions?
@@ -46,7 +46,7 @@ module.exports = {
     // ===== SECURITY & ANTI-FEATURES =====
     ANTI_DELETE: process.env.ANTI_DELETE || "true", // true antidelete to recover deleted messages 
     ANTI_CALL: process.env.ANTI_CALL || "true", // enble to reject calls automatically 
-    ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false",    // Block bad words?
+    ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "truee",    // Block bad words?
     ANTI_LINK: process.env.ANTI_LINK || "true",    // Block links in groups?
     ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "true",                 // Block links in groups?
     ANTI_VV: process.env.ANTI_VV || "true",   // Block view-once messages?
